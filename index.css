@@ -18,8 +18,8 @@ form{
 }
 
 @media only screen and (max-width: 600px) {
-  .move-box-over {
+  textarea {
     position: relative;
-    left: 15px;
+    left: 20px;
   }
 }
