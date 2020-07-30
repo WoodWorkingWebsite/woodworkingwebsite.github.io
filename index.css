@@ -1,3 +1,7 @@
+
+h1{
+  font-family: 'Wood-Block-One';
+}
 .bg-wood{
   background-image: url("images/plank.jpg");
 }
@@ -20,11 +24,15 @@ form{
   transition: all 4s ease-in-out;
 }
 
+
 @media only screen and (max-width: 600px) {
-  textarea {
-    position: relative;
-    left: 100px;
+ .col-6{
+    width: 50%;
   }
+  img{
+    width:50%
+  }
+
 }
 .top-down-onefifty
 {
@@ -42,4 +50,7 @@ display:none;
 }
 .effect:hover img.hover{
 display:block;
+}
+.resp-text{
+  font-size: 10vw;
 }
