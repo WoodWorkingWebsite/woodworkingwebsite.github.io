@@ -55,14 +55,47 @@
     <p style="font-size: 2.25rem">What can I make for you?</p>
   </div>
 <center>
-<form method="POST" action="http://formspree.io/madolyncodes@gmail.com">
+  <form
+  action="https://formspree.io/madolyncodes@gmail.com"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your file:
+    <input type="file" name="upload">
+  </label>
+
+  <button type="submit">Send</button>
+</form>
+<!-- <form method="POST" action="http://formspree.io/madolyncodes@gmail.com">
   <input type="name" name="Name" placeholder="Your name">
   <br>
   <input type="email" name="Email" placeholder="Your email">
   <br>
-  <textarea class="move-box-over" style="position: relative; left: 18px" name="Custom Order" placeholder="Your Custom Order"></textarea>
+
+  <input list="shopitem" name="Shop Item">
+  <datalist id="shopitem">
+    <option value="Exotic Hardwood American Flag">
+    <option value="Wishin' I Was Fishin' - Dark">
+    <option value="Wishin' I Was Fishin' - Light">
+    <option value="Epoxy Inlay Michigan Cutting Board">
+    <option value="Michigan Home Sign">
+    <option value="Happy Campers Sign">
+    <option value="Epoxy Resin Coasters">
+    <option value="Michigan Epoxy Resin Coasters">
+  </datalist>
+  <br>
+    <textarea class="move-box-over" style="position: relative; left: 18px" name="Custom Order" placeholder="Your Custom Order"></textarea>
+  <br>
+  <br>
+<input type="file" name="attachment" accept="image/png, image/jpeg">  <br>
   <button style="position: relative; top: 25px" type="submit">Send</button>
-</form>
+  <br>
+</form> -->
 </center>
 <!-- </body>
 <div class="jumbotron text-center footer" style="margin-bottom:0">
