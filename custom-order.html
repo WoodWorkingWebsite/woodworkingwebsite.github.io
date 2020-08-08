@@ -28,7 +28,6 @@
       color: #bd8f64;
       font-size: 2vw;
     }
-
 </style>
 </head>
 <body>
@@ -58,19 +57,41 @@
 
   <!-- Navbar ends here-->
   <div class="jumbotron text-center shop" style="margin-top:0;  background-color: black;">
-    <p>Order Form</p>
-    <p style="font-size: 2.25rem">What can I make for you?</p>
-    <div class="row">
+    <p>Custom Item</p>
+    <p style="font-size: 2.25rem">Order Form</p>
+  <div class="row">
   <div class="col-6">  <a class="btn btn-primary btn-md btn-outline-dark"   href="/shop-order.html" role="button" style="color: black; background-color: #bd8f64; font-size: 2vw">Place an Order for a Shop item</a></div>
   <div class="col-6"><a class="btn btn-primary btn-lg btn-outline-dark" href="/custom-order.html" role="button" style="color: black; background-color: #bd8f64; font-size: 2vw">Place an Order for a Custom Item</a></div>
 </div>
   </div>
 <center>
-<form method="POST" action="http://formspree.io/jacobvanooteghem@gmail.com">
+  <form class="form-horizontal" method="POST" action="http://formspree.io/jacobvanooteghem@gmail.com">
+    <div class="form-group">
+      <div class="col-sm-10">
+        <input type="name" class="form-control" id="name" placeholder="Your Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Your Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-10">
+      <textarea class="form-control" rows="5" id="comment" placeholder="Your Custom Order"></textarea>
+    </div>
+  </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div
+  </form>
+<!-- <form method="POST" action="http://formspree.io/jacobvanooteghem@gmail.com">
   <input type="name" name="Name" placeholder="Your name">
   <br>
   <input type="email" name="Email" placeholder="Your email">
-  <br>
+  <br> -->
 
 
 
@@ -85,7 +106,7 @@
     <option value="Epoxy Resin Coasters">
     <option value="Michigan Epoxy Resin Coasters">
   </datalist>
-  <br> -->
+  <br>
     <textarea name="Custom Order" placeholder="Your Custom Order"></textarea>
     <br>
     <input type="submit" value="Submit Order">
@@ -93,7 +114,7 @@
 </form>
 <h1 style= "font-size: 200px"> </h1>
 </center>
-<!-- </body>
+ </body>
 <div class="jumbotron text-center footer" style="margin-bottom:0">
   <p>Footer</p>
 </div> -->
