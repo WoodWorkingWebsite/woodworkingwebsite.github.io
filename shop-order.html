@@ -28,10 +28,46 @@
       color: #bd8f64;
       font-size: 2vw;
     }
+    .col-sm-10 input[type=name] {
+      background-color: #bd8f64;
+      color: black;
+      font-family: "Karma", sans-serif;
+      border: 2px solid #000;
+    }
+    .col-sm-10 input[type=email] {
+      background-color: #bd8f64;
+      color: black;
+      font-family: "Karma", sans-serif;
+      border: 2px solid #000;
+    }
+    .col-sm-10 textarea {
+      background-color: #bd8f64;
+      color: black;
+      font-family: "Karma", sans-serif;
+      border: 2px solid #000;
+    }
+    .col-sm-10 input[type=text] {
+      background-color: #bd8f64;
+      color: black;
+      font-family: "Karma", sans-serif;
+      border: 2px solid #000;
+    }
+    form .form-horizontal .form-control::-webkit-input-placeholder {
+      color: black !important;
+    }
 
+    form .form-horizontal .form-control::-moz-placeholder {
+      color: black;
+    }
+    form .form-horizontal .form-control:-ms-input-placeholder {
+      color: black;
+    }
+    form .form-horizontal .form-control:placeholder {
+      color: black !important;
+    }
 </style>
 </head>
-<body>
+<body style="background-color: #000">
 
 
   <!--Navbar starts here-->
@@ -69,7 +105,7 @@
   <form class="form-horizontal" method="POST" action="http://formspree.io/jacobvanooteghem@gmail.com">
     <div class="form-group">
       <div class="col-sm-10">
-        <input type="name" class="form-control" id="name" placeholder="Your Name">
+        <input type="name" class="form-control" style="color:black;" id="name" placeholder="Your Name" style="color: black">
       </div>
     </div>
     <div class="form-group">
@@ -77,21 +113,30 @@
         <input type="email" class="form-control" id="email" placeholder="Your Email">
       </div>
     </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-      <label class="form-check-label" for="defaultCheck1">
-        <p>Exotic Hardwood American Flag - $99.99 </p>
-      </label>
-    </div>
     <div class="form-group">
       <div class="col-sm-10">
-      <textarea class="form-control" rows="5" id="comment" placeholder="Your Customization Request"></textarea>
+    <input class="destination-list form-control" type="text" placeholder="Select a Shop Item" list="shopitem">
+      <datalist id="shopitem">
+        <option value="Exotic Hardwood American Flag: $99.99">
+        <option value="Wishin' I Was Fishin' - Dark: $24.99">
+        <option value="Wishin' I Was Fishin' - Light: $24.99">
+        <option value="Epoxy Inlay Michigan Cutting Board: $39.99">
+        <option value="Michigan Home Sign: $39.99">
+        <option value="Happy Campers Sign: $34.99 | Custom $39.99">
+        <option value="Epoxy River Coasters: $29.99">
+        <option value="Epoxy Michigan Coasters: $34.99">
+      </datalist>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <div class="col-sm-10">
+      <textarea class="form-control" rows="5" id="comment" onfocus="this.value=''; setbg('#bd8f64');" placeholder="Your Customization Request and/or Order Comments"></textarea>
     </div>
   </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
+<button type="submit" class="btn btn-primary btn-md btn-outline-dark" style="color: black; font-family: 'Bungee', cursive; background-color: #bd8f64; font-size: 2vw;" >Submit</button>      </div>
     </div>
       </center>
   </form>
@@ -135,3 +180,9 @@
   <p>Footer</p>
 </div> -->
 </html>
+<script>
+function setbg(color)
+{
+document.getElementById("comment").style.background=color
+}
+</script>

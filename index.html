@@ -23,13 +23,27 @@
       color: #bd8f64;
       background-color: black;
     }
+    .carousel-item {
+      height: 80vh;
+      min-height: 350px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .jumbotron h1{
+      font-family: 'Bungee', cursive;
+      font-size: 5vw;
+      color: black;
+    }
 /* body{
   background-image: url("images/plank.jpg");
   background-size: 100%;
 } */
 </style>
 </head>
-<body>
+<body style="background-color: #c8d4df">
 
 
   <!--Navbar starts here-->
@@ -55,8 +69,82 @@
   </nav>
 
   <!-- Navbar ends here-->
+<div class="center jumbotron" style="background-color: transparent; font-family: 'Bungee', cursive; font-size: 10vw; color: black;">
+  <center><img src="images/jvwlogotransparent.png" style="width: 25%"></center>
+  <center><h1>Welcome to JV Woodworks</h1></center>
+</div>
+<div class="container-fluid" style="padding-bottom: 2%; padding-top: 2%;">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
 
-<center><img src="images/jvwlogotransparent.png"></center>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('images/WishinIWasFishinDark.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h2 class="display-4">Second Slide</h2>
+            <p class="lead">This is a description for the second slide.</p> -->
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/MichiganHomeSign.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/WishinIWasFishinLight.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/EpoxyInlayMichiganCuttingBoard.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/fathersday(4).png')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/america.png')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/ExoticHardwoodAmericanFlag.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/EpoxyCoasters1.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/EpoxyCoasters2.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/HappyCampersSign.png')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </div>
 <!-- <div class="jumbotron text-center shop" style="margin-top:0">
   <p>Site under construction</p>
   <h1>Check back soon!</h1>
