@@ -28,10 +28,27 @@
       color: #bd8f64;
       font-size: 2vw;
     }
-
+    .btn-primary:hover{
+      background-color: black;
+      color: #bd8f64;
+      font-size: 2vw;
+      opacity: 75%;
+    }
+    .link{
+      font-family: 'Bungee', cursive;
+      font-size: 15px;
+      color: black;
+    }
+    .link:hover{
+      font-family: 'Bungee', cursive;
+      font-size: 15px;
+      color: black;
+      text-decoration: none;
+      opacity: 50%;
+    }
 </style>
 </head>
-<body style="background: black">
+<body style="background-image: url('images/test3.jpg')">
 
 
   <!--Navbar starts here-->
@@ -57,17 +74,45 @@
   </nav>
 
   <!-- Navbar ends here-->
-  <div class="jumbotron text-center shop" style="margin-top:0;  background-color: black;">
-    <p>Order Form</p>
-    <p style="font-size: 2.25rem">What can I make for you?</p>
+  <div class="jumbotron text-center shop" style="margin-top:0;  background-image: url('images/test3.jpg');">
+    <p style="color: #bd8f64; -webkit-text-stroke: 2.5px black; margin-bottom: 0rem">Order Form</p>
+      <p style="color: #bd8f64; -webkit-text-stroke: 1.25px black; font-size: 3vw; margin-bottom: 0rem">What can I make for you?</p>
     <div class="row">
-  <div class="col-6">  <a class="btn btn-primary btn-md btn-outline-dark"   href="/shop-order.html" role="button" style="color: black; background-color: #bd8f64; font-size: 2vw">Place an Order for a Shop item</a></div>
-  <div class="col-6"><a class="btn btn-primary btn-lg btn-outline-dark" href="/custom-order.html" role="button" style="color: black; background-color: #bd8f64; font-size: 2vw">Place an Order for a Custom Item</a></div>
+  <div class="col-6"><a class="btn btn-primary btn-lg btn-outline-dark" href="/custom-order.html" role="button" style="color: #bd8f64; background-color: black; font-size: 2vw">Order a Custom Item</a></div>
+  <div class="col-6">  <a class="btn btn-primary btn-lg btn-outline-dark"   href="/shop-order.html" role="button" style="color: #bd8f64; background-color: black; font-size: 2vw">Order a Shop item</a></div>
 </div>
   </div>
+</body>
 
-<!-- </body>
-<div class="jumbotron text-center footer" style="margin-bottom:0">
-  <p>Footer</p>
-</div> -->
+<footer class="page-footer font-small bg-wood">
+    <div class="container">
+      <br>
+      <hr style="margin: 0 10%; border-top: 5px solid black">
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="/index.html" class="link">Home</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="/shop.html" class="link">Shop</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="/custom.html" class="link">Place an Order</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="https://www.facebook.com/JVWoodworks03" class="link">Facebook</a>
+        </h6>
+      </div>
+    </div>
+    <br>
+    <hr style="margin: 0 10%; border-top: 5px solid black">
+    <br>
+</footer>
+
 </html>

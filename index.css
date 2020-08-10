@@ -9,8 +9,9 @@
 }
 .jumbotron{
   font-family: 'Bungee', cursive;
-  font-size: 10vw;
+  font-size: 5vw;
   color: #bd8f64;
+  padding: 1rem 0rem;
 }
 .bg-wood{
   background-image: url("images/plank.jpg");
@@ -21,6 +22,11 @@ dark-text a{
   color: black;
 }
 .nav-link{
+  font-family: 'Bungee', cursive;
+  font-size: 30px;
+  color: black;
+}
+a {
   font-family: 'Bungee', cursive;
   font-size: 30px;
   color: black;

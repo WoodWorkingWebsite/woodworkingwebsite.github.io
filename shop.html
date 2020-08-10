@@ -18,11 +18,23 @@
     body,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif;
   color: black;}
     .w3-bar-block .w3-bar-item {padding:20px}
+    .link{
+      font-family: 'Bungee', cursive;
+      font-size: 15px;
+      color: black;
+    }
+    .link:hover{
+      font-family: 'Bungee', cursive;
+      font-size: 15px;
+      color: black;
+      text-decoration: none;
+      opacity: 50%;
+    }
 
 </style>
 
 </head>
-<body style="background-color: #c8d4df">
+<body style="background-color: white">
 
 
 <!--Navbar starts here-->
@@ -49,11 +61,13 @@
 
 <!-- Navbar ends here-->
 
-<div class="jumbotron text-center shop" style="margin-top:0;  background-color: black;">
-  <p>Shop</p>
-<a class="btn btn-primary btn-lg btn-outline-dark" href="/custom.html" role="button" style="color: black; background-color: #bd8f64; font-size: 2.25rem">Place an Order</a>
+<div class="jumbotron text-center shop" style="margin-top:0;  background-image: url('images/test3.jpg');">
+  <p style="color: #bd8f64; -webkit-text-stroke: 2.5px black;">Shop</p>
+<a class="btn btn-primary btn-lg btn-outline-dark" href="/custom.html" role="button" style="color: #bd8f64; background-color: black; font-size: 2vw">Place an Order</a>
 </div>
-<div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+
+<div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-quarter effect">
         <img class="image" src="images\Exotic Hardwood American Flag -removebg.png"  style="width: 100%" />
         <img class="image hover" src="images\Exotic Hardwood American Flag Back -removebg.png " style="width: 100%" />
@@ -128,4 +142,36 @@
 <!-- Footer -->
 
 </body>
+
+<footer class="page-footer font-small bg-wood">
+    <div class="container">
+      <br>
+      <hr style="margin: 0 10%; border-top: 5px solid black">
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="/index.html" class="link">Home</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="/shop.html" class="link">Shop</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="/custom.html" class="link">Place an Order</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="https://www.facebook.com/JVWoodworks03" class="link">Facebook</a>
+        </h6>
+      </div>
+    </div>
+    <br>
+    <hr style="margin: 0 10%; border-top: 5px solid black">
+    <br>
+</footer>
+
 </html>

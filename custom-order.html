@@ -29,34 +29,46 @@
       font-size: 2vw;
     }
     .col-sm-10 input[type=name] {
-      background-color: #bd8f64;
-      color: black;
+      /* background-color: #bd8f64;
+      color: black; */
       font-family: "Karma", sans-serif;
       border: 2px solid #000;
     }
     .col-sm-10 input[type=email] {
-      background-color: #bd8f64;
-      color: black;
+      /* background-color: #bd8f64;
+      color: black; */
       font-family: "Karma", sans-serif;
       border: 2px solid #000;
     }
     .col-sm-10 textarea {
-      background-color: #bd8f64;
-      color: black;
+      /* background-color: #bd8f64;
+      color: black; */
       font-family: "Karma", sans-serif;
       border: 2px solid #000;
     }
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    /* ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+
   color: black;
-  opacity: 1; /* Firefox */
+  opacity: 1; /* Firefox
   }
 
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  :-ms-input-placeholder { /* Internet Explorer 10-11
   color: black;
   }
 
-  ::-ms-input-placeholder { /* Microsoft Edge */
+  ::-ms-input-placeholder { /* Microsoft Edge
   color: black;
+  } */
+  .link{
+    font-family: 'Bungee', cursive;
+    font-size: 15px;
+    color: black;
+  }
+  .link:hover{
+    font-family: 'Bungee', cursive;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    opacity: 50%;
   }
 </style>
 </head>
@@ -86,26 +98,26 @@
   </nav>
 
   <!-- Navbar ends here-->
-  <div class="jumbotron text-center shop" style="margin-top:0;  background-color: black;">
-    <p>Custom Item</p>
-    <p style="font-size: 2.25rem">Order Form</p>
-  <div class="row">
-  <div class="col-6">  <a class="btn btn-primary btn-md btn-outline-dark"   href="/shop-order.html" role="button" style="color: black; background-color: #bd8f64; font-size: 2vw">Place an Order for a Shop item</a></div>
-  <div class="col-6"><a class="btn btn-primary btn-lg btn-outline-dark" href="/custom-order.html" role="button" style="color: black; background-color: #bd8f64; font-size: 2vw">Place an Order for a Custom Item</a></div>
+  <div class="jumbotron text-center shop" style="margin-top:0;  background-image: url('images/test3.jpg');">
+    <p style="color: #bd8f64; -webkit-text-stroke: 2.5px black; margin-bottom: 0rem">Custom Item</p>
+      <p style="color: #bd8f64; -webkit-text-stroke: 1.25px black; font-size: 3vw; margin-bottom: 0rem">Order Form</p>
+    <div class="row">
+      <div class="col-6"><a class="btn btn-primary btn-lg btn-outline-dark" href="/custom-order.html" role="button" style="color: #bd8f64; background-color: black; font-size: 2vw">Order a Custom Item</a></div>
+      <div class="col-6">  <a class="btn btn-primary btn-lg btn-outline-dark"   href="/shop-order.html" role="button" style="color: #bd8f64; background-color: black; font-size: 2vw">Order a Shop item</a></div>
 </div>
   </div>
 <center>
-  <form class="form-horizontal" method="POST" action="http://formspree.io/jacobvanooteghem@gmail.com">
+  <form class="form-horizontal" method="POST" action="http://formspree.io/jacobvanooteghem@gmail.com" style="padding-bottom: 2%">
     <div class="form-group">
       <div class="col-sm-10">
         <input type="name" class="form-control" id="name" placeholder="Your Name">
       </div>
-    </div>
+    <!-- </div> -->
     <div class="form-group">
       <div class="col-sm-10">
         <input type="email" class="form-control" id="email" placeholder="Your Email">
       </div>
-    </div>
+    <!-- </div> -->
     <div class="form-group">
       <div class="col-sm-10">
       <textarea type="text" class="form-control" rows="5" id="comment" onfocus="this.value=''; setbg('#bd8f64');" placeholder="Your Custom Order"></textarea>
@@ -115,8 +127,41 @@
       <div class="col-sm-offset-2 col-sm-10">
         <button type="submit" class="btn btn-primary btn-md btn-outline-dark" style="color: black; font-family: 'Bungee', cursive; background-color: #bd8f64; font-size: 2vw;" >Submit</button>
       </div>
-    </div
+    </div>
   </form>
+</body>
+
+<footer class="page-footer font-small bg-wood">
+    <div class="container">
+      <br>
+      <hr style="margin: 0 10%; border-top: 5px solid black">
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="/index.html" class="link">Home</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="/shop.html" class="link">Shop</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="/custom.html" class="link">Place an Order</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="https://www.facebook.com/JVWoodworks03" class="link">Facebook</a>
+        </h6>
+      </div>
+    </div>
+    <br>
+    <hr style="margin: 0 10%; border-top: 5px solid black">
+    <br>
+</footer>
+
 <!-- <form method="POST" action="http://formspree.io/jacobvanooteghem@gmail.com">
   <input type="name" name="Name" placeholder="Your name">
   <br>
@@ -150,9 +195,9 @@
 </div> -->
 </html>
 
-<script>
+<!-- <script>
 function setbg(color)
 {
 document.getElementById("comment").style.background=color
 }
-</script>
+</script> -->
