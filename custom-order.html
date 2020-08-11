@@ -24,6 +24,32 @@
       color: #bd8f64;
       background-color: black;
     }
+    .carousel-item {
+      height: 80vh;
+      min-height: 200px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .jumbotron h1{
+      font-family: 'Bungee', cursive;
+      font-size: 5vw;
+      color: black;
+    }
+    .link{
+      font-family: 'Bungee', cursive;
+      font-size: 15px;
+      color: black;
+    }
+    .link:hover{
+      font-family: 'Bungee', cursive;
+      font-size: 15px;
+      color: black;
+      text-decoration: none;
+      opacity: 50%;
+    }
     .btn-primary{
       background-color: black;
       color: #bd8f64;
@@ -130,7 +156,61 @@
       </div>
     </div>
   </form>
+  <div class="w3-row-padding w3-padding-16 w3-center" style="background-image: url('images/test3.jpg'); padding-bottom: 2%; padding-top: 2%">
+      <div class="w3-half effect">
+  <div class="center jumbotron" style="background-color: transparent; font-family: 'Bungee', cursive; font-size: 10vw; color: black;">
+  <center><h1> </h1></center>
+  <center><h1 style="color: #bd8f64; padding-top: 12.5%; -webkit-text-stroke: 2.5px black;">Previous Custom Orders</h1></center>
+  </div>
+  </div>
+  <div class="w3-half effect">
+  <div class="container-fluid" style="padding-bottom: 2%; padding-top: 2%;">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('images/JackDaniels.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h2 class="display-4">Second Slide</h2>
+            <p class="lead">This is a description for the second slide.</p> -->
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/VeteransFlag.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/RichardsHome.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </div>
+  <!-- <center><h1 style="color: #bd8f64; -webkit-text-stroke: 2.5px black;   font-family: 'Bungee', cursive; font-size: 2vw; padding: 1rem 0rem;">Past Creations</h1></center> -->
+
+  </div>
+  </div>
 </body>
+
+<!--Footer-->
 
 <footer class="page-footer font-small bg-wood">
     <div class="container">
